@@ -1,0 +1,95 @@
+/* @override 
+	http://neu.weingut-domhof.de/wp-content/plugins/acf-repeater-collapser/css/acf5_repeater_collapser_admin.css?ver=1.0.0 */
+
+/* Expand / Collapse Buttons */
+.field-repeater-toggle-all,
+.field-flexible-toggle {
+	float:right;
+	margin: -5px 0 0 !important;
+}
+
+.button.field-repeater-toggle-single {
+	padding: 1px 1px 0 1px;
+}
+.layout .field-repeater-toggle-single {
+	margin: 0 3px;
+}
+
+.repeater-button-cell {
+	background: #f9f9f9 !important;
+	padding: 0 !important;
+	vertical-align: middle !important;
+	text-align: center !important;
+	border-right-color: #e1e1e1 !important;
+	width: 30px!important;
+	/* Sorry 'bout the !importants. They are gross. Sadly, so are the ACF selectors I have to battle. */
+}
+/* Grossness: http://css-tricks.com/absolutely-position-element-within-a-table-cell/ */
+.repeater-button-cell-div {
+	position: relative;
+}
+
+.field-repeater-toggle::before,
+.field-flexible-toggle::before {
+	content: "\f506";
+	display: inline;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'dashicons';
+	vertical-align: text-bottom;
+	color: #777;
+}
+.field-repeater-toggle-all::before,
+.field-flexible-toggle-all::before {
+	margin: 3px 5px 0 0;
+}
+
+.collapsed-repeater .field-repeater-toggle-all::before,
+.collapsed-flex.field-flexible-toggle-all::before,
+.collapsed-row .field-repeater-toggle-single::before {
+	content: "\f211";
+}
+
+.repeater {
+  clear: both;
+}
+
+.acf-table {
+	position: relative;
+}
+
+.collapsed-row .acf-table tr,
+.collapsed-row > td.acf-fields > div,
+ .collapsed-row > .acf-table.block-layout td.acf-fields > div {
+	display: none;
+}
+
+.collapsed-row .acf-table tr:first-child,
+.collapsed-row > td.acf-fields div:first-child,
+ .collapsed-row > .acf-table.block-layout td.acf-fields > div:first-child {
+	display: block;
+	max-height: 100px;
+	overflow:hidden;
+}
+
+.collapsed-row [class*="column-layout-"] {
+	width: 100%;
+}
+
+.collapsed-row .collapsed-row > td.acf-fields  {
+	width: 100%;
+}
+
+/* "Masks" the first field in order to prevent clicking on it */
+.collapsed-row .acf-table tr::after,
+.collapsed-row > td.acf-fields::after {
+	position: absolute;
+	z-index: 1;
+	top: 0; bottom: 0; left: 0px; right: 0;
+	display: block;
+	content: ' ';
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba( 244, 244, 244, .2 )), to(rgba( 244, 244, 244, 0.6 )));
+	background: -o-linear-gradient( rgba( 244, 244, 244, .2 ), rgba( 244, 244, 244, 0.6 ) );
+	background: -moz-linear-gradient( rgba( 244, 244, 244, .2 ), rgba( 244, 244, 244, 0.6 ) );
+	background: -webkit-linear-gradient( rgba( 244, 244, 244, .2 ), rgba( 244, 244, 244, 0.6 ) );
+	background: linear-gradient( rgba( 244, 244, 244, .2 ), rgba( 244, 244, 244, 0.6 ) );
+}
