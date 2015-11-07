@@ -7,7 +7,7 @@ This is where ACF Collapse Fields comes in place. You can collapse one specific 
 
 The plugin works with Repeater Fields in Row and Block mode and it works well in a Repeater within a Repeater Field.
 
-![ACF Collapse Fields with Repeater Fields](http://www.dreihochzwo.de/download/collapse-field-repeater.png)
+![ACF Collapse Fields with Repeater Fields](http://www.dreihochzwo.de/download/collapse-field-repeater_new.png)
 
 For the Flexible Content Field and the Repeater Field ACF allows collapsing a row by clicking on the row header or the button in the Repeater Field order row. But there is no posibility to expand or collapse all rows by one click. The ACF Collapse Fields plugin solves this problem and add a button to collapse or expand all rows at once.
 
