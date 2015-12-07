@@ -3,12 +3,12 @@
  * Plugin Name: Advanced Custom Fields: Collapse Fields
  * Plugin URI: http://www.dreihochzwo.de
  * Description: Provides a way to collapse and expand Repeater & Flexible Content fields in order to enable better sorting.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Thomas Meyer
  * Author URI: http://www.dreihochzwo.de
  */
 
-define( 'ACF_COLLAPSER_VERSION', '1.0.0' );
+define( 'ACF_COLLAPSER_VERSION', '1.1.0' );
 
 load_plugin_textdomain( 'acf-collapse-fields', false, dirname( plugin_basename(__FILE__) ) . '/lang/' );
 
